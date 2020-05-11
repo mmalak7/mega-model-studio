@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import "circular-std";
+
+.header{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding-top: 70px;
+    justify-content: space-between;
+    font-family: CircularStd;
+
+    a{
+        text-decoration: none;
+        color: #101010;
+        font-family: CircularStd;
+        font-weight: 600;
+    }
+
+    .studio{
+        font-size: 30px;
+        text-transform: uppercase;
+        padding-left: 320px;
+        font-family: CircularStd;
+
+        p{
+            display: inline;
+            color: #E4B27A;
+        }
+    }
+
+    .header-section{
+        font-size: 20px;
+        display: flex;
+        width: 600px;
+        justify-content: space-between;
+    }
+
+    .lang{
+        font-size: 30px;
+        padding-right: 320px;
+        font-family: CircularStd;
+        font-weight: 600;
+
+        p{
+            display: inline;
+            color: #828282;
+        }
+    }
+}

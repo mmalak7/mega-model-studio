@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import "circular-std";
+
+.models-container {
+    margin: 0 auto;
+    position: relative;
+    padding-top: 167px;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: CircularStd;
+
+    .info-part {
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+        margin-left: 50px;
+        margin-right: 360px;
+    }
+
+    .photo-part {
+        margin-right: 50px;
+        position: relative;
+        margin-left: 500px;
+        width: 600px;
+        height: 100%;
+        visibility: hidden;
+
+        img {
+            width: 100%;
+            box-shadow: 2px 3px 4px black;
+            outline: 3px solid white;
+        }
+
+    }
+}
+
+.front {
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-9deg);
+    z-index: -1;
+    opacity: 0;
+}
+
+
+.name {
+    position: relative;
+    overflow: hidden;
+    font-size: 4vw;
+    margin: 0;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-color: white;
+    }
+}
+
+.profession {
+    position: relative;
+    overflow: hidden;
+    font-size: 2vw;
+    margin: 0;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: white;
+    }
+}
+
+.description {
+    position: relative;
+    overflow: hidden;
+    font-size: 1.2vw;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-color: white;
+    }
+}
+
+.experience {
+    position: relative;
+    overflow: hidden;
+    font-size: 1.2vw;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: white;
+    }
+}

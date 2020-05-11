@@ -1,0 +1,126 @@
+.home-container {
+    margin: 0 auto;
+    position: relative;
+    padding-top: 167px;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: CircularStd;
+
+    .info-part {
+        position: relative;
+        height: 100%;
+        margin-left: 320px;
+        overflow: hidden;
+        line-height: 1.1;
+    }
+
+    .photo-part {
+        position: relative;
+        display: block;
+        width: 600px;
+        height: 100%;
+        margin-right: 320px;
+        visibility: hidden; 
+
+        img {
+            width: 100%;
+            box-shadow: 2px 3px 4px black;
+            outline: 3px solid white;
+        }
+    }
+}
+
+.p1{
+    font-size: 7vw;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+    &:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-color: white;
+    }
+}
+
+.p2{
+    color: #E4B27A;
+    font-size: 7vw;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+    &:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-color: white;
+    }
+}
+
+.p3{
+    font-size: 7vw;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+    p{
+        position: relative;
+        display: inline;
+        color: #E4B27A;
+    }
+
+    &:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-color: white;
+    }
+
+}
+
+.quote{
+    margin-top: 120px;
+    font-size: 1.5vw;
+    margin: 70px auto;
+    position: relative;
+    overflow: hidden;
+
+    &:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-color: white;
+    }
+}
+
+.backModel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transform: rotate(-9deg);
+    z-index: -1;
+}
+
+.frontModel{
+    position: absolute;
+    overflow: hidden;
+}
