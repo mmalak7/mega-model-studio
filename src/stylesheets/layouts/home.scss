@@ -17,30 +17,15 @@
         overflow: hidden;
         line-height: 1.1;
     }
-
-    .photo-part {
-        position: relative;
-        display: block;
-        width: 600px;
-        height: 100%;
-        margin-right: 320px;
-        visibility: hidden; 
-
-        img {
-            width: 100%;
-            box-shadow: 2px 3px 4px black;
-            outline: 3px solid white;
-        }
-    }
 }
 
-.p1{
+.p1 {
     font-size: 7vw;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
 
-    &:after{
+    &:after {
         content: '';
         position: absolute;
         width: 100%;
@@ -51,14 +36,14 @@
     }
 }
 
-.p2{
+.p2 {
     color: #E4B27A;
     font-size: 7vw;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
 
-    &:after{
+    &:after {
         content: '';
         position: absolute;
         width: 100%;
@@ -69,19 +54,19 @@
     }
 }
 
-.p3{
+.p3 {
     font-size: 7vw;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
 
-    p{
+    p {
         position: relative;
         display: inline;
         color: #E4B27A;
     }
 
-    &:after{
+    &:after {
         content: '';
         position: absolute;
         width: 100%;
@@ -93,14 +78,14 @@
 
 }
 
-.quote{
+.quote {
     margin-top: 120px;
     font-size: 1.5vw;
     margin: 70px auto;
     position: relative;
     overflow: hidden;
 
-    &:after{
+    &:after {
         content: '';
         position: absolute;
         width: 100%;
@@ -111,16 +96,40 @@
     }
 }
 
-.backModel{
+
+
+.photo-part {
+    position: relative;
+    display: block;
+    width: 600px;
+    height: 100%;
+    margin-right: 320px;
+}
+
+.backModel {
     position: absolute;
     top: 0;
     left: 0;
     overflow: hidden;
     transform: rotate(-9deg);
     z-index: -1;
+
+    .image-home {
+        width: 100%;
+        box-shadow: 2px 3px 4px black;
+        outline: 3px solid white;
+    }
 }
 
-.frontModel{
+.frontModel {
     position: absolute;
     overflow: hidden;
+
+    .image-home {
+        width: 100%;
+        box-shadow: 2px 3px 4px black;
+        outline: 3px solid white;
+    }
 }
+
+

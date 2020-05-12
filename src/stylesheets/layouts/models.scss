@@ -20,21 +20,20 @@
         margin-left: 50px;
         margin-right: 360px;
     }
+}
 
-    .photo-part {
-        margin-right: 50px;
-        position: relative;
-        margin-left: 500px;
-        width: 600px;
-        height: 100%;
-        visibility: hidden;
+.photo-part-models {
+    margin-right: 50px;
+    position: relative;
+    margin-left: 500px;
+    width: 600px;
+    height: 100%;
+    visibility: hidden;
 
-        img {
-            width: 100%;
-            box-shadow: 2px 3px 4px black;
-            outline: 3px solid white;
-        }
-
+    img {
+        width: 100%;
+        box-shadow: 2px 3px 4px black;
+        outline: 3px solid white;
     }
 }
 

@@ -28,7 +28,7 @@ const Models = () => {
 
     const tl = new TimelineLite();
     const tl2 = new TimelineLite();
-    const tlImg = new TimelineLite();
+    const tlModelImg = new TimelineLite();
     const tl3 = new TimelineLite();
     const tl4 = new TimelineLite();
     const tl5 = new TimelineLite();
@@ -39,7 +39,7 @@ const Models = () => {
 
         tl2.to(name, 0, { css: { visibility: 'visible' } })
             .to(nameCSS, 1.7, { width: "0%", ease: "power3.out" })
-        tlImg.to(modelPart, 1, { css: { visibility: 'visible' } })
+        tlModelImg.to(modelPart, 1, { css: { visibility: 'visible' } })
             .to(imgFront, 1.7, {css: {opacity: 1, ease: "power3.out"}})
             .to(imgBack, 1.7, {css: {opacity: 1, ease: "power3.out"}})
 
@@ -53,7 +53,7 @@ const Models = () => {
 
     return (
         <div className='models-container'>
-            <div ref={el => (modelPart = el)} className='photo-part'>
+            <div ref={el => (modelPart = el)} className='photo-part-models'>
                 <img ref={el => (imgFront = el)} className='front' src={photo} alt='' />
                 <img ref={el => (imgBack = el)} className='back' src={photo} alt='' />
             </div>
