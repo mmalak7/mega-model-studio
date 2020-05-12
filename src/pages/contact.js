@@ -5,6 +5,7 @@ import photo from '../assets/photo-unsplash2.jpg';
 
 import CSSRulePlugin from "gsap/CSSRulePlugin";
 import { TimelineLite } from 'gsap'
+import { gsap } from "gsap";
 
 const Contact = () => {
 
@@ -36,9 +37,11 @@ const Contact = () => {
     const tl3 = new TimelineLite();
     const tl4 = new TimelineLite();
 
+    gsap.registerPlugin(CSSRulePlugin, gsap, TimelineLite)
+
     useEffect(() => {
 
-        tlcontactImg.to(photoForm, 0, { css: { visibility: 'visible' } })
+        tlcontactImg.to(photoForm, { css: { visibility: 'visible' } })
             .to(imageFormCSS, 1.7, { width: "-0%", ease: "power3.out" })
             .from(image, 1.7, { scale: 2, ease: "power3.out", delay: -1.7 });
 
@@ -55,7 +58,7 @@ const Contact = () => {
             .to([socialIconsCSS, numCSS], 1.7, { width: "0%", ease: "power3.out" })
 
 
-    }, [])
+    }, []);
 
     return (
         <div className='contact-container'>

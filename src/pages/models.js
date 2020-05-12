@@ -5,6 +5,7 @@ import '../stylesheets/layouts/models.scss';
 
 import CSSRulePlugin from "gsap/CSSRulePlugin";
 import { TimelineLite } from 'gsap'
+import { gsap } from "gsap";
 
 const Models = () => {
 
@@ -33,13 +34,15 @@ const Models = () => {
     const tl4 = new TimelineLite();
     const tl5 = new TimelineLite();
 
+    gsap.registerPlugin(CSSRulePlugin, gsap, TimelineLite)
+
     useEffect(() => {
 
-        tl.to(infoPart, 0, { css: { visibility: 'visible' } })
+        tl.to(infoPart, 1, { css: { visibility: 'visible' } })
 
-        tl2.to(name, 0, { css: { visibility: 'visible' } })
+        tl2.to(name, 1, { css: { visibility: 'visible' } })
             .to(nameCSS, 1.7, { width: "0%", ease: "power3.out" })
-        tlModelImg.to(modelPart, 1, { css: { visibility: 'visible' } })
+        tlModelImg.to(modelPart, 2, { css: { visibility: 'visible' } })
             .to(imgFront, 1.7, {css: {opacity: 1, ease: "power3.out"}})
             .to(imgBack, 1.7, {css: {opacity: 1, ease: "power3.out"}})
 
@@ -49,7 +52,7 @@ const Models = () => {
             .to(descriptionCSS, 1.7, { width: "0%", ease: "power3.out" })
         tl5.to(experience, 6, { css: { visibility: 'visible' } })
             .to(experienceCSS, 1.7, { width: "0%", ease: "power3.out" })
-    }, [])
+    }, []);
 
     return (
         <div className='models-container'>

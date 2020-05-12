@@ -5,6 +5,7 @@ import '../stylesheets/layouts/home.scss';
 
 import CSSRulePlugin from "gsap/CSSRulePlugin";
 import { TimelineLite } from "gsap";
+import { gsap } from "gsap";
 
 const Home = () => {
 
@@ -28,6 +29,8 @@ const Home = () => {
     const tl3 = new TimelineLite();
     const tl4 = new TimelineLite();
 
+    gsap.registerPlugin(CSSRulePlugin, gsap, TimelineLite)
+
     useEffect(() => {
 
         tlHomeImg.from([photo_back, photo_frontModel], 1.5, {
@@ -45,7 +48,7 @@ const Home = () => {
         tl4.to(quote, 6.2, { css: { visibility: 'visible' } })
             .to(quoteAfter, 1.7, { width: "0%", ease: "power3.out" })
 
-    }, [])
+    }, []);
 
     return (
         <div className='home-container'>
