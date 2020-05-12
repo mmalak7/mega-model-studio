@@ -37,7 +37,7 @@ const Home = () => {
                 delay: 0.8,
                 ease: "power3.out",
                 y: 800,
-            })
+            }).to([backModel, frontModel], {css: { overflow: 'unset'}})
 
         tl.to(p1, 3, { css: { visibility: 'visible' } })
             .to(p1After, 1.7, { width: "0%", ease: "power3.out" })

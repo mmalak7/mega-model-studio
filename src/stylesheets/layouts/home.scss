@@ -8,10 +8,14 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    // grid-column-gap: 5em;
     font-family: CircularStd;
 
-    .info-part {
+    .info-part {    
         position: relative;
+        margin-right: 30px;
         height: 100%;
         margin-left: 320px;
         overflow: hidden;
@@ -96,10 +100,9 @@
     }
 }
 
-
-
 .photo-part {
     position: relative;
+    margin-left: 150px;
     display: block;
     width: 600px;
     height: 100%;
@@ -109,7 +112,7 @@
 .backModel {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     overflow: hidden;
     transform: rotate(-9deg);
     z-index: -1;
