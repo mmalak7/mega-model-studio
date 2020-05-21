@@ -13,9 +13,6 @@ const Header = () =>{
                 <NavLink className='models'  to='/models' exact>
                     Models
                 </NavLink>
-                <NavLink className='about' to='/about' exact>
-                    About us
-                </NavLink>
                 <NavLink className='contact' to='/contact' exact>
                     Contact
                 </NavLink>

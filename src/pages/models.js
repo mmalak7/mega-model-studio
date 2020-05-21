@@ -52,7 +52,7 @@ const Models = () => {
             .to(descriptionCSS, 1.7, { width: "0%", ease: "power3.out" })
         tl5.to(experience, 6, { css: { visibility: 'visible' } })
             .to(experienceCSS, 1.7, { width: "0%", ease: "power3.out" })
-    }, []);
+    });
 
     return (
         <div className='models-container'>

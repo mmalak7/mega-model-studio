@@ -58,7 +58,7 @@ const Contact = () => {
             .to([socialIconsCSS, numCSS], 1.7, { width: "0%", ease: "power3.out" })
 
 
-    }, []);
+    });
 
     return (
         <div className='contact-container'>
