@@ -1,21 +1,18 @@
 .home-container {
     margin: 0 auto;
     position: relative;
-    padding-top: 167px;
-    width: 100%;
+    padding-top: 120px;
+    width: 100vw;
     height: 700px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    // display: grid;
-    // grid-template-columns: repeat(2, 1fr);
-    // grid-column-gap: 5em;
     font-family: CircularStd;
 
     .info-part {    
         position: relative;
-        margin-right: 30px;
+        width: 700px;
         height: 100%;
         margin-left: 320px;
         overflow: hidden;
@@ -24,7 +21,7 @@
 }
 
 .p1 {
-    font-size: 7vw;
+    font-size: 6.5vw;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -42,7 +39,7 @@
 
 .p2 {
     color: #E4B27A;
-    font-size: 7vw;
+    font-size: 6.5vw;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -59,7 +56,7 @@
 }
 
 .p3 {
-    font-size: 7vw;
+    font-size: 6.5vw;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -102,11 +99,11 @@
 
 .photo-part {
     position: relative;
-    margin-left: 150px;
     display: block;
-    width: 600px;
+    width: 450px;
     height: 100%;
     margin-right: 320px;
+    transform: translateX(50px);
 }
 
 .backModel {

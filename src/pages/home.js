@@ -36,7 +36,7 @@ const Home = () => {
         tlHomeImg.from([photo_back, photo_frontModel], 1.5, {
                 delay: 0.8,
                 ease: "power3.out",
-                y: 800,
+                y: 600,
             }).to([backModel, frontModel], {css: { overflow: 'unset'}})
 
         tl.to(p1, 3, { css: { visibility: 'visible' } })
